@@ -253,18 +253,26 @@ snippet ee      输出信息，并终止执行
 	echo ${1};  exit();
 snippet e-      打印调试分隔符
 	echo '------ ${1} ------<br/>';
-snippet vd      打印详细的变量信息
+snippet vd      打印变量信息
 	var_dump(${1});
-snippet ve      打印易读的变量信息
-	var_export(${1});
-snippet p_r     打印详细的变量信息
-	print_r(${1});
-snippet vde     打印详细的变量信息，并终止执行
+snippet vde     打印变量信息，并终止执行
 	var_dump(${1}); exit();
-snippet vee     打印易读的变量信息，并终止执行
+snippet ve      打印变量信息（可用于直接赋值）
+	var_export(${1});
+snippet vee     打印变量信息（可用于直接赋值）并终止执行
 	var_export(${1}); exit();
-snippet p_re    打印详细的变量信息，并终止执行
+snippet p_r     打印变量信息（无数据类型）
+	print_r(${1});
+snippet p_re    打印变量信息（无数据类型），并终止执行
 	print_r(${1}); exit();
+snippet dzd     打印引用次数
+	debug_zval_dump(${1});
+snippet dzde    打印引用次数，并终止执行
+	debug_zval_dump(${1}); exit();
+snippet dpb     打印程序调用栈
+	debug_print_backtrace();${1}
+snippet dpbe    打印程序调用栈，并终止执行
+	debug_print_backtrace(); exit();${1}
 # 超全局变量
 snippet glo     全局变量
 	$GLOBALS['${1}']
@@ -324,7 +332,7 @@ snippet se      self::
 snippet t       $this->
 	$this->${1}
 snippet .       =>
-	=> ${1}
+	=>${1}
 # 预定义常量
 snippet _       __ ... __
 	__${1}__
@@ -383,43 +391,3 @@ snippet sm_as    传递变量
 snippet sm_di    模板渲染
 	$smarty->display('${1}');
 ################
-# CodeIgniter框架
-snippet ci_ll    加载类库
-	$this->load->library('${1}');
-snippet ci_lm    加载模型
-	$this->load->model('${1}');
-snippet ci_lv    加载视图
-	$this->load->view('${1}'${2});
-snippet ci_lh    加载辅助函数
-	$this->load->helper('${1}');
-snippet ci_ld    加载数据库
-	$this->load->database();${1}
-snippet ci_ldf   加载数据库维护
-	$this->load->dbforge();${1}
-snippet ci_cl    加载配置文件
-	$this->config->load('${1}');
-snippet ci_ci    获取配置项
-	$this->config->item('${1}');
-snippet ci_csi   设置配置项
-	$this->config->set_item('${1}', '${2}');
-# CodeIgniter辅助函数
-snippet ci_msg   写入日志
-	log_message('${1}');
-snippet ci_err   显示错误信息
-	show_error('${1}');
-snippet ci_404   显示404页面
-	show_404();${1}
-snippet ci_coi   获取配置项
-	config_item('${1}');
-snippet ci_sur   基于首页的地址
-	site_url('${1}');
-snippet ci_bur   网站基准地址
-	base_url();${1}
-snippet ci_cur   当前地址
-	current_url();${1}
-snippet ci_uti   从字符串生成URL字串
-	url_title(${1});
-snippet ci_red   转向
-	redirect('${1}', '${2:refresh}');
-################
-# Yii框架

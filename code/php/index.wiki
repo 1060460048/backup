@@ -3,10 +3,14 @@
 [[../../index|首页]]
 ==PHP==
 ----
-<h3>
-* [[smarty|Smarty模板引擎]]
-* [[functions|函数用法拾遗]]
-* [[qy_framework|某公司内部框架分析]]
-* [[qy_query|某公司内部框架常用查询语句]]
-</h3>
+<center>
+<h2>
+[[base/index|语言基础]]
+----
+[[laravel/index|Laravel]]
+----
+[[front-end/index|前端开发]]
+[[tools/index|辅助工具]]
+</h2>
+</center>
 ----
