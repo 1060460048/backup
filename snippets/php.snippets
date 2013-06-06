@@ -8,9 +8,9 @@ snippet //      多行注释
 snippet -       分隔注释
 	// -------------------------------${1}
 snippet php     单行标签
-	<?php ${1} ?>
+	<?PHP ${1} ?>
 snippet php.    跨行标签
-	<?php
+	<?PHP
 
 	${1}
 
@@ -139,8 +139,8 @@ snippet if      if
 	if (${1}) {
 	    ${2}
 	}
-snippet elif    else if
-	else if (${1}) {
+snippet elif    elseif
+	elseif (${1}) {
 	    ${2}
 	}
 snippet el      else
@@ -332,7 +332,7 @@ snippet se      self::
 snippet t       $this->
 	$this->${1}
 snippet .       =>
-	=>${1}
+	=> ${1}
 # 预定义常量
 snippet _       __ ... __
 	__${1}__
@@ -361,29 +361,30 @@ snippet jen     JSON数据的编码
 	json_encode(${1})
 snippet jde     JSON数据的解码
 	json_decode(${1})
+#### PHP标准库 #####
+snippet s_areg  注册自动载入函数
+	spl_autoload_register('${1}');
 #### 模板标签 ####
 snippet pe      输出标签
-	<?php echo ${1}; ?>
+	<?PHP echo ${1}; ?>
 snippet pp      输出标签 [PHP 5.4起默认可用]
 	<?= ${1} ?>
 snippet pif     if标签
-	<?php if (${1}): ?>
+	<?PHP if (${1}): ?>
 	${2}
-	<?php endif ?>
+	<?PHP endif ?>
 snippet pelif   elseif标签
-	<?php elseif (${1}): ?>
+	<?PHP elseif (${1}): ?>
 snippet pel     else标签
-	<?php else: ?>${1}
+	<?PHP else: ?>${1}
 snippet pfo     for标签
-	<?php for (${1}): ?>
+	<?PHP for (${1}): ?>
 	${2}
-	<?php endfor ?>
+	<?PHP endfor ?>
 snippet pfe     foreach标签
-	<?php foreach (${1}): ?>
+	<?PHP foreach (${1}): ?>
 	${2}
-	<?php endforeach ?>
-snippet pen     end标签
-	<?php end${1} ?>
+	<?PHP endforeach ?>
 ################
 # Smarty模板引擎
 snippet sm_as    传递变量

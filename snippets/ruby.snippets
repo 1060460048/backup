@@ -20,16 +20,12 @@ snippet ld      包含文件（可加载多次）
 # 模块、类
 snippet mo      Module定义
 	module ${1:m_name}
-
 	  ${2}
-
-	end  # module
+	end
 snippet cl      类定义
 	class ${1:cl_name}
-
 	  ${2}
-
-	end  # class
+	end
 snippet stn     类生成器（Struct.new）
 	Struct.new(${1})
 snippet doc     多行字符串
@@ -40,37 +36,37 @@ snippet doc     多行字符串
 snippet d       不带参数
 	def ${1:f_name}
 	  ${2}
-	end  # func
+	end
 snippet d.      带参数
 	def ${1:f_name} (${2})
 	  ${3}
-	end  # func
+	end
 snippet ud      销毁方法
 	undef ${1}
 snippet di      构造方法（不带参数）
 	def initialize
 	  ${1}
-	end  # func
+	end
 snippet di.     构造方法（带参数）
 	def initialize (${1})
 	  ${2}
-	end  # func
+	end
 snippet dic     执行拷贝操作后自动调用（不带参数）
 	def initialize_copy
 	  ${1}
-	end  # func
+	end
 snippet dic.    执行拷贝操作后自动调用（带参数）
 	def initialize_copy (${1})
 	  ${2}
-	end  # func
+	end
 snippet dmm     幽灵方法
 	def method_missing (${1})
 	  ${2}
-	end  # func
+	end
 snippet dcm     访问不存在常量的情况下调用的幽灵方法
 	def const_missing (${1})
 	  ${2}
-	end  # func
+	end
 snippet aw      写方法
 	attr_writer :${1}
 snippet ar      读方法
@@ -127,11 +123,11 @@ snippet cs      case
 snippet do      do（无参数）
 	do
 	  ${1}
-	end  # do
+	end
 snippet do.     do（有参数）
 	do |${1}|
 	  ${2}
-	end  # do
+	end
 # 异常处理
 snippet be      begin
 	begin
@@ -148,7 +144,7 @@ snippet thr     发出跳转执行流程的“信号”
 snippet cat     捕获跳转“信号”，执行跳转
 	catch ${1} do
 	  ${2}
-	end  # do
+	end
 snippet msg     异常信息
 	message${1}
 snippet E       Exception

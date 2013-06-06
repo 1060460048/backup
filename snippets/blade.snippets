@@ -8,11 +8,15 @@ snippet in      包含模板（继承当前模板的数据）
 	@include('${1}')${2}
 snippet re      包含模板（不继承数据）
 	@render('${1}')${2}
-snippet ex      extends
+snippet ex      扩展模板
 	@extends('${1}')${2}
-snippet se      section
+snippet la      布局
+	@layout('${1}')
+snippet yi      向外传递数据
+	@yield('${1}')
+snippet se      填充片段
 	@section('${1}')
-	${2}
+	    ${2}
 	@stop
 # 流程控制
 snippet if      if
@@ -50,10 +54,6 @@ snippet wh      while
 	    ${2}
 	@endwhile
 # 其他
-snippet la      布局
-	@layout('${1}')
-snippet yi      向外传递数据
-	@yield('${1}')
 snippet pa      引用父片段
 	@parent${1}
 snippet st      终止控制结构
