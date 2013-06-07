@@ -387,8 +387,13 @@ snippet pfe     foreach标签
 	<?PHP endforeach ?>
 ################
 # Smarty模板引擎
-snippet sm_as    传递变量
+snippet sm_as   传递变量
 	$smarty->assign('${1}', ${2});
-snippet sm_di    模板渲染
+snippet sm_di   模板渲染
 	$smarty->display('${1}');
+	redirect('${1}', '${2:refresh}');
+################
+# Yii框架
+################
+# Laravel框架
 ################

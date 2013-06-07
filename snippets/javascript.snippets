@@ -99,6 +99,12 @@ snippet gat     getAttribute
 snippet sat     setAttribute
 	setAttribute('${1}', ${2})
 ################
+# jQuery类库
+snippet .       jQuery选择器
+	$(${1})
+snippet >       jQuery选择器（带引号）
+	$('${1}')${2}
+################
 # Node平台
 snippet rq      导入包
 	require('${1}');${2}
@@ -107,9 +113,5 @@ snippet ex      导出函数
 snippet cl      输出
 	console.log(${1});
 ################
-# jQuery类库
-snippet .       jQuery选择器
-	$(${1})
-snippet >       jQuery选择器（带引号）
-	$('${1}')${2}
+# Express框架
 ################
