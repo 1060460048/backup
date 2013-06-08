@@ -391,9 +391,8 @@ snippet sm_as   传递变量
 	$smarty->assign('${1}', ${2});
 snippet sm_di   模板渲染
 	$smarty->display('${1}');
-	redirect('${1}', '${2:refresh}');
+snippet sm_cl   加载配置
+	$smarty->configLoad('${1}');
 ################
 # Yii框架
-################
-# Laravel框架
 ################
