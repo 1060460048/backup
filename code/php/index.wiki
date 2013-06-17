@@ -8,9 +8,6 @@
 [[base/index|语言基础]]
 ----
 [[laravel/index|Laravel]]
-----
-[[front-end/index|前端开发]]
-[[tools/index|辅助工具]]
 </h2>
 </center>
 ----

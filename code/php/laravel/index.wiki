@@ -3,11 +3,7 @@
 [[../../../index|首页]] - [[../index|PHP]]
 ==Laravel Framework==
 ----
-<center>
 <h2>
-[[base|Laravel基础]]
-----
-[[error|Laravel问题集锦]]
+[[artisan|artisan命令行工具]]
 </h2>
-</center>
 ----
