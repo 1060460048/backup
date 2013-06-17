@@ -9,10 +9,11 @@
 	br   = branch
 	fe   = fetch
 	st   = status
+	me   = merge
 	re   = remote add origin
 	pu   = push origin master
 	pl   = pull origin master
 	cmm  = commit -m
-	cmav = commit -a -v
+	cma  = commit -a -m
 [github]
 	user = ruchee
