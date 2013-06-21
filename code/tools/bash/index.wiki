@@ -2,8 +2,3 @@
 
 [[../../../index|首页]] - [[../index|Tools]]
 ==Bash==
-----
-<center>
-[[base|基础语法]]
-</center>
-----

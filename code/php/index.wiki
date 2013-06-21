@@ -6,8 +6,6 @@
 <center>
 <h2>
 [[base/index|语言基础]]
-----
-[[laravel/index|Laravel]]
 </h2>
 </center>
 ----

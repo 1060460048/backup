@@ -1,17 +1,11 @@
-%title C++语言笔记
+%title C++
 
 [[../../index|首页]]
-==C++语言笔记==
+==C++==
 ----
 <center>
 <h2>
 [[base/index|语言基础]]
-----
-[[asm/index|Asm]]
-[[linux/index|Linux编程]]
-[[network/index|网络编程]]
-----
-[[csbase/index|计算机专业基础]]
 </h2>
 </center>
 ----

@@ -3,9 +3,11 @@
 [[../../index|首页]]
 ==辅助工具==
 ----
-<h3>
-* [[git|Git使用总结]]
-* [[grep|grep使用集锦]]
-* [[find|find使用集锦]]
-</h3>
+<center>
+<h2>
+[[git/index|Git]]
+[[vim/index|Vim]]
+[[bash/index|Bash]]
+</h2>
+</center>
 ----

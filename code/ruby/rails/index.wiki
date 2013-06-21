@@ -1,15 +1,13 @@
-%title Ruby on Rails
+%title Rails Framework
 
 [[../../../index|首页]] - [[../index|Ruby]]
-==Ruby on Rails==
+==Rails Framework==
 ----
-<center>
-[[primer|Ruby on Rails编程入门]]
+<h2>
+[[ubuntu|Ubuntu下RoR开发环境的安装]]
 ----
-[[cmd|常用命令]]
+[[windows|Windows下RoR开发环境的安装]]
 ----
-[[ubuntu|Ubuntu下Ruby on Rails开发环境的安装]]
-----
-[[blog|一个博客的实现]]
-</center>
+[[issue|问题集锦]]
+</h2>
 ----

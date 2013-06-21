@@ -1,0 +1,11 @@
+%title 问题集锦
+
+[[../../../index|首页]] - [[../index|Ruby]] - [[index|Rails]]
+==问题集锦==
+----
+`Q`：在执行 `bundle install` 时总是失败，更新无法完成
+
+`A`：首先需要检查 `Gemfile` 中是否有不支持当前平台的 `Gem` 包（譬如 `Guard` 就不支持 `Windows` 和 `JRuby`），如果存在则删除之然后重新执行 `bundle install`
+----
+<red>date</red> : 2013-06-20
+----

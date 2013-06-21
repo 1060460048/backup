@@ -1,13 +1,11 @@
-%title Ruby
+%title Clojure
 
 [[../../index|首页]]
-==Ruby==
+==Clojure==
 ----
 <center>
 <h2>
 [[base/index|语言基础]]
-----
-[[rails/index|Rails]]
 </h2>
 </center>
 ----
