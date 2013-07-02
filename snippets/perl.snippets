@@ -1,5 +1,10 @@
+snippet /       单行注释
+	# ${1}
+snippet //      多行注释
+	=pod${1}
+	=cut
 snippet -       分隔注释
-	// -------------------------------${1}
+	# -------------------------------${1}
 # 编译选项
 snippet u       版本约束
 	use ${1};
@@ -9,16 +14,12 @@ snippet uw      开启警告
 	use warnings;${1}
 snippet ud      报告详细警告信息
 	use diagnostics;${1}
-# 正则表达式
-snippet /       / .. /
-	/${1}/${2}
 # 复合结构
-snippet f       子程序
-	sub ${1:f_name} {
-
+snippet s       子程序
+	sub ${1:s_name}
+	{
 	  ${2}
-
-	}  // sub
+	}
 # 流程控制
 snippet if      if
 	if (${1}) {
@@ -35,15 +36,15 @@ snippet el      else
 snippet fo      for
 	for (${1}) {
 	  ${2}
-	}  // for
+	}
 snippet fe      foreach
 	foreach ${1}(${2}) {
 	  ${3}
-	}  // foreach
+	}
 snippet wh      while
 	while (${1}) {
 	  ${2}
-	}  // while
+	}
 # 单个关键字
 snippet ch      chomp
 	chomp;${1}
@@ -51,7 +52,5 @@ snippet df      defined
 	defined(${1});${2}
 snippet p       输出（不自动换行）
 	print ${1};
-snippet s       输出（自动换行）
-	say ${1};
 snippet .       ->
 	->${1}
